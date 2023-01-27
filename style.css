@@ -1,0 +1,134 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+.container{
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+
+}
+nav .menu-img{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+nav .logo-img{
+    width: 160px;
+    cursor: pointer;
+
+}
+nav ul{
+     flex: 1;     /* to use entire available spaces */
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline:0;
+    cursor: pointer;
+    transition: background 0.5s;
+
+}
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 3px;   
+    transition: bacground 0.5s, margin-left 0.5s;
+    
+}
+.lamp-conatiner{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+.lamp{
+    width: 100%;
+
+}
+.light{
+    top: 97%;
+    position: absolute;
+    left: 44%;
+    transform: translateX(-50%);
+    width: 700px;
+    opacity: 0;
+    transition: opacity 0.9s;
+}
+.text-container{
+    width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+
+}
+.text-container h1{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 40px;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 150px;
+
+}
+.control .line{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+.line span{
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: green;
+    display: block ;
+}
+.active{
+    background-color: green;
+
+}
+.active span{
+    background: #fff;
+    margin-left: 30px ;
+}
+.on{
+    opacity: 1;
+}
+
+
